@@ -1,0 +1,186 @@
+1. allCommentsDec2015ToDec2018
+SELECT * FROM 
+  [fh-bigquery:reddit_comments.2015_05], 
+  [fh-bigquery:reddit_comments.2015_06], 
+  [fh-bigquery:reddit_comments.2015_07], 
+  [fh-bigquery:reddit_comments.2015_08], 
+  [fh-bigquery:reddit_comments.2015_09], 
+  [fh-bigquery:reddit_comments.2015_10],
+  [fh-bigquery:reddit_comments.2015_11],
+  [fh-bigquery:reddit_comments.2015_12],
+  [fh-bigquery:reddit_comments.2016_01], 
+  [fh-bigquery:reddit_comments.2016_02],
+  [fh-bigquery:reddit_comments.2016_03],
+  [fh-bigquery:reddit_comments.2016_04],
+  [fh-bigquery:reddit_comments.2016_05],
+  [fh-bigquery:reddit_comments.2016_06],
+  [fh-bigquery:reddit_comments.2016_07],
+  [fh-bigquery:reddit_comments.2016_08],
+  [fh-bigquery:reddit_comments.2016_09],
+  [fh-bigquery:reddit_comments.2016_10],
+  [fh-bigquery:reddit_comments.2016_11],
+  [fh-bigquery:reddit_comments.2016_12],
+  [fh-bigquery:reddit_comments.2017_01],
+  [fh-bigquery:reddit_comments.2017_02],
+  [fh-bigquery:reddit_comments.2017_03],
+  [fh-bigquery:reddit_comments.2017_04],
+  [fh-bigquery:reddit_comments.2017_05],
+  [fh-bigquery:reddit_comments.2017_06],
+  [fh-bigquery:reddit_comments.2017_07],
+  [fh-bigquery:reddit_comments.2017_08],
+  [fh-bigquery:reddit_comments.2017_09],
+  [fh-bigquery:reddit_comments.2017_10],
+  [fh-bigquery:reddit_comments.2017_11],
+  [fh-bigquery:reddit_comments.2017_12],
+  [fh-bigquery:reddit_comments.2018_01],
+  [fh-bigquery:reddit_comments.2018_02],
+  [fh-bigquery:reddit_comments.2018_03],
+  [fh-bigquery:reddit_comments.2018_04],
+  [fh-bigquery:reddit_comments.2018_05],
+  [fh-bigquery:reddit_comments.2018_06],
+  [fh-bigquery:reddit_comments.2018_07],
+  [fh-bigquery:reddit_comments.2018_08],
+  [fh-bigquery:reddit_comments.2018_09],
+  [fh-bigquery:reddit_comments.2018_10],
+  [fh-bigquery:reddit_comments.2018_11],
+  [fh-bigquery:reddit_comments.2018_12]
+
+----------------------------------------------------------
+
+2. allCommentsDec2015ToDec2018StandardSQL
+SELECT * FROM 
+  `fh-bigquery.reddit_comments.2015_05` UNION ALL SELECT * FROM  
+  `fh-bigquery.reddit_comments.2015_06` UNION ALL SELECT * FROM  
+  `fh-bigquery.reddit_comments.2015_07` UNION ALL SELECT * FROM  
+  `fh-bigquery.reddit_comments.2015_08` UNION ALL SELECT * FROM  
+  `fh-bigquery.reddit_comments.2015_09` UNION ALL SELECT * FROM  
+  `fh-bigquery.reddit_comments.2015_10` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2015_11` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2015_12` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2016_01` UNION ALL SELECT * FROM  
+  `fh-bigquery.reddit_comments.2016_02` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2016_03` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2016_04` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2016_05` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2016_06` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2016_07` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2016_08` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2016_09` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2016_10` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2016_11` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2016_12` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2017_01` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2017_02` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2017_03` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2017_04` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2017_05` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2017_06` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2017_07` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2017_08` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2017_09` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2017_10` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2017_11` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2017_12` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2018_01` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2018_02` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2018_03` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2018_04` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2018_05` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2018_06` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2018_07` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2018_08` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2018_09` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2018_10` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2018_11` UNION ALL SELECT * FROM 
+  `fh-bigquery.reddit_comments.2018_12`
+  
+  -----------------------------------------------------------------------------------------------------
+  
+  3. Various queries to find certain subreddits
+  -- SELECT * FROM [fh-bigquery:reddit_posts.full_corpus_201509] WHERE subreddit = 'incels' LIMIT 1000;
+-- SELECT * FROM [fh-bigquery:reddit_posts.full_corpus_201512] WHERE subreddit = 'incels' LIMIT 1000;
+-- SELECT * FROM [fh-bigquery:reddit_posts.full_corpus_201512] WHERE subreddit = 'beatingwomen' LIMIT 1000;
+SELECT count(*), subreddit FROM [fh-bigquery:reddit_posts.full_corpus_201509]  GROUP BY subreddit ORDER by subreddit;
+
+--------------------------------------------------------------------------------------
+
+4. Creating user matrix (taken from Martin - Dissecting Trump's User Base) - https://fivethirtyeight.com/features/dissecting-trumps-most-rabid-online-following/
+4.a.
+SELECT subreddit, authors, DENSE_RANK() OVER (ORDER BY authors DESC) AS rank_authors
+FROM (SELECT subreddit, SUM(1) as authors
+     FROM (SELECT subreddit, author, COUNT(1) as cnt 
+         FROM [collectredditdata.subredditAlgebra.allCommentsDec2015ToDec2018]
+         WHERE author NOT IN (SELECT author FROM [fh-bigquery:reddit_comments.bots_201505])
+         GROUP BY subreddit, author HAVING cnt > 0)
+     GROUP BY subreddit) t
+ORDER BY authors DESC;
+4.b. 
+In standard SQL
+SELECT t1.subreddit, t2.subreddit, SUM(1) as NumOverlaps
+FROM (SELECT subreddit, author, COUNT(1) as cnt 
+     FROM [fh-bigquery:reddit_comments.all_starting_201501]
+     WHERE author NOT IN (SELECT author FROM [fh-bigquery:reddit_comments.bots_201505])
+     AND subreddit IN (SELECT subreddit FROM [collectredditdata.subredditAlgebra.processDataPart1_20190305_101250]
+       WHERE rank_authors>200 AND rank_authors<2201)
+     GROUP BY subreddit, author HAVING cnt > 10) t1
+JOIN (SELECT subreddit, author, COUNT(1) as cnt 
+     FROM [fh-bigquery:reddit_comments.all_starting_201501]
+     WHERE author NOT IN (SELECT author FROM [fh-bigquery:reddit_comments.bots_201505])
+     GROUP BY subreddit, author HAVING cnt > 10) t2
+ON t1.author=t2.author
+WHERE t1.subreddit!=t2.subreddit
+GROUP BY t1.subreddit, t2.subreddit
+In Legacy SQL:
+SELECT t1.subreddit, t2.subreddit, SUM(1) as NumOverlaps
+FROM (SELECT subreddit, author, COUNT(1) as cnt 
+     FROM `fh-bigquery:reddit_comments.all_starting_201501`
+     WHERE author NOT IN (SELECT author FROM `fh-bigquery:reddit_comments.bots_201505`)
+     AND subreddit IN (SELECT subreddit FROM `collectredditdata.subredditAlgebra.processDataPart1_20190305_101250`
+       WHERE rank_authors>200 AND rank_authors<2201)
+     GROUP BY subreddit, author HAVING cnt > 10) t1
+JOIN (SELECT subreddit, author, COUNT(1) as cnt 
+     FROM `fh-bigquery:reddit_comments.all_starting_201501`
+     WHERE author NOT IN (SELECT author FROM `fh-bigquery:reddit_comments.bots_201505`)
+     GROUP BY subreddit, author HAVING cnt > 10) t2
+ON t1.author=t2.author
+WHERE t1.subreddit!=t2.subreddit
+GROUP BY t1.subreddit, t2.subreddit
+
+-----------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
