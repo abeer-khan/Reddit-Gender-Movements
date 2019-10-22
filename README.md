@@ -2,7 +2,7 @@
 Examine subreddits aligned with social movements related to gender (gendered movements), namely r/TheRedPill, r/MensRights, r/Feminism, in addition to r/AskMen, r/AskWomen
 
 Examine their posts and comments. 
-1. Preprocess & use NMF on posts 
+1. Preprocess & use NMF on posts <br>
 2. Create subreddit2vec matrices 
   2.1. subreddit to text vectors (using subreddit content = concatenate all comments in the subreddit)
     2.1.1. subreddit to tf-idf vectors
