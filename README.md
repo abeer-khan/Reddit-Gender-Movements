@@ -1,11 +1,16 @@
 # Reddit-Gender-Movements
 
+# Why I did it?
 What are the gender issues people discuss today? What do we know about the people who discuss them? Where should we even look to find this information? 
 
 There has been a surge in the use of social media to understand social issues. Social media offers (a) current, (b) many, and (c) possibly more honest discussions of possibly sensitive gender issues online. For e.g. consider the hashtag #IDidNotReport, #MeToo, #NotAllMen. 
 
+# What I did
 We use social media here too, namely Reddit. We examine large subreddits related to gender & aligned with social movements related to gender (gendered movements), namely r/TheRedPill, r/MensRights, r/Feminism, in addition to r/AskMen, r/AskWomen. 
+We examine their posts to extract the gender issues and various perspectives on them. 
+We examine their comments to extract some characteristics of the people involved with these gendered subreddits. 
 
+# How I did it
 We examine their posts to extract the gender issues and various perspectives on them. 
 For this we (a) Preprocess & use NMF on posts. We then reorganize the topics yielded by NMF into higher level topics (henceforth referred to as themes). We end up with about 17 themes.
 We then extract the keywords used by each subreddit to discuss each them (leading to at most 6 * 17 sets of keywords). 
@@ -50,12 +55,14 @@ Here is an incomplete list of results of this work:
 For more, please read Chapter 6 of my thesis https://uwspace.uwaterloo.ca/handle/10012/14973?show=full (pages 63-66).
 
 # Some meta-insights 
+## NMF >> LDA
 1. NMF trumps LDA when it comes to getting specific insights. LDA produces topics that are too generic. A few others echo my opinion. Unfortunately they seem to exist more often in blogs than in research papers. See here for examples: <br> 
 (a) https://wiki.ubc.ca/Course:CPSC522/A_Comparison_of_LDA_and_NMF_for_Topic_Modeling_on_Literary_Themes <br>
 (b) An analysis of the coherence of descriptors in topic modeling - O'Callaghan, et al. <br>
 
 I'm not sure why in my reading of research work, LDA seemed to be the algorithm most new topic algorithms compete against. 
 
+## Coherence metrics didn't really work for me
 2. Related to point (1). "Coherence" of a topic is a concept many topic modeling algorithms strive to achieve. A good topic modeling algorithm is one that yields coherent topics. They measure coherence via many metrics that attempt to mimic human judgements of coherence. These metrics use word counts, embeddings, stemmed and unstemmped corpora, and everything in between. <br>
 
 Here is how I organized the "coherence" metrics in my head, based on my reading: 
@@ -79,6 +86,7 @@ Related work: <br>
 
 I wonder if there exists a goodness of topic metric that measures both coherence, and specificity (where I use specificty to mean how specific a topic is vs being generic). 
 
+## One topic model doesn't fit all
 3. Topic modeling is hard. No algorithm fits all datasets. You just have to try the existing ones on yours to see which works in your case. I'd recommend trying NMF before LDA before newer algorithms. 
 
 # Further Reading
