@@ -22,7 +22,25 @@ For this we
   2.2. subreddit to interest vectors. <br>
   For each subreddit (all million subreddits), find the number of users it has in common with every other subreddit (actually the top 200-2000 = 2047 subreddits) <br>
   Find PPMI of each cell. <br>
+        
+I have the matrix calculated as per 2.2. It's too large to upload. Email me and I'll share a copy. 
   
+# Why did I choose NMF as the topic modeling algorithm of choice?
+Short Answer: It produced topics that seemed coherent to us. 
+
+Long Answer: 
+I tried LDA, NMF, and SeaNMF for various number of topics. I tried them on both stemmed and unstemmed versions of the corpora. <br> 
+I tried various coherence metrics that used embeddings, either pre-trained on external corpora, or those trained on Reddit corpora. <br>
+The results were inconclusive. No one topic mdeling algorithm stood out as the best one. Using our (human) judgment, the judgment these metrics attempt to mimic, we realized LDA was producing super generic topics. NMF and SeaNMF produced similar & comparable topics. But, SeaNMF took longer to do it. So, we went with NMF. <br>
+I later found work that echored our observations of LDA vs NMF (see meta-insights).
+
+A partial list of the combinations I tried: 
+1. word2vec embeddings pre-trained on an unstemmed Twitter corpus where stop words weren't removed. 
+2. fastText embeddings I trained on a neutral Reddit corpus (^). ^ was stemmed, and standard stop words were removed. 
+3. word2vec embeddigs I trained on each of the gendered subreddits. These were stemmed and standard stop words were removed. 
+
+^ this was text from AskReddit. Since this is a Reddit subreddit, I expect the jargon to be somewhat similar to each of the gnedered subreddits. 
+
 # Main insights
 Here is an incomplete list of results of this work:
 1. gender movements discuss workplace sexism, personal safety, rape, and legal issues among other gender issues, and different movements often have different perspectives on these issues. 
@@ -39,6 +57,23 @@ For more, please read Chapter 6 of my thesis https://uwspace.uwaterloo.ca/handle
 I'm not sure why in my reading of research work, LDA seemed to be the algorithm most new topic algorithms compete against. 
 
 2. Related to point (1). "Coherence" of a topic is a concept many topic modeling algorithms strive to achieve. A good topic modeling algorithm is one that yields coherent topics. They measure coherence via many metrics that attempt to mimic human judgements of coherence. These metrics use word counts, embeddings, stemmed and unstemmped corpora, and everything in between. <br>
+
+Here is how I organized the "coherence" metrics in my head, based on my reading: 
+1. use word co-occurrences
+  1.1. these co-occurrences are calculated on my own corpus (in my case gendered subreddits)
+  1.2. these co-occurrences are calculated on an external corpus. 
+2. use embeddings
+  2.1. trained on my own corpus
+    2.1.1. word2vec (trained on stemmed / unstemmed, stop removed / not removed corpora)
+    2.1.2. fastText (trained on stemmed / unstemmed, stop removed / not removed corpora)
+    ...
+  2.2. trained on external corpora
+    2.2.1. word2vec (trained on stemmed / unstemmed, stop removed / not removed corpora)
+    2.2.2. fastText (trained on stemmed / unstemmed, stop removed / not removed corpora)
+    ...
+    
+Obviously, it's a little unfair if you use coherence metrics that use embeddings trained on stemmed corpora, to evaluate the goodness of topic models on corpora that are not similarly preprocessed. 
+ 
 Related work: <br>
 (a) Exploring the space of topic coherence measures. Roder et al. <br>
 
@@ -56,3 +91,7 @@ This is a list of resources that I found interesting conducting this research. M
   2.4.
 
 ... to be continued. 
+
+# Acknowledgements
+Besides the plenty researchers whose work I read, cited, mentioned above, many researchers around UWaterloo gender studies and philosophy departments helped me put my research in context. I'm grateful to their work.
+I'm also grateful to all who make their work open source. Please reach out if you think I stood on your shoulders but forgot to cite you, I'd be happy to correct! 
