@@ -32,14 +32,15 @@ Here is an incomplete list of results of this work:
 For more, please read Chapter 6 of my thesis https://uwspace.uwaterloo.ca/handle/10012/14973?show=full (pages 63-66).
 
 # Some meta-insights 
-1. NMF trumps LDA when it comes to getting specific insights. LDA produces topics that are too generic. A few others echo my opinion. Unfortunately they seem to exist more often in blogs than in research papers. See here for examples: (a) https://wiki.ubc.ca/Course:CPSC522/A_Comparison_of_LDA_and_NMF_for_Topic_Modeling_on_Literary_Themes
-(b) An analysis of the coherence of descriptors in topic modeling - O'Callaghan, et al.
+1. NMF trumps LDA when it comes to getting specific insights. LDA produces topics that are too generic. A few others echo my opinion. Unfortunately they seem to exist more often in blogs than in research papers. See here for examples: <br> 
+(a) https://wiki.ubc.ca/Course:CPSC522/A_Comparison_of_LDA_and_NMF_for_Topic_Modeling_on_Literary_Themes <br>
+(b) An analysis of the coherence of descriptors in topic modeling - O'Callaghan, et al. <br>
 
 I'm not sure why in my reading of research work, LDA seemed to be the algorithm most new topic algorithms compete against. 
 
-2. Related to point (1). "Coherence" of a topic is a concept many topic modeling algorithms strive to achieve. A good topic modeling algorithm is one that yields coherent topics. They measure coherence via many metrics that attempt to mimic human judgements of coherence. These metrics use word counts, embeddings, stemmed and unstemmped corpora, and everything in between. 
-Related work: 
-(a) Exploring the space of topic coherence measures. Roder et al.
+2. Related to point (1). "Coherence" of a topic is a concept many topic modeling algorithms strive to achieve. A good topic modeling algorithm is one that yields coherent topics. They measure coherence via many metrics that attempt to mimic human judgements of coherence. These metrics use word counts, embeddings, stemmed and unstemmped corpora, and everything in between. <br>
+Related work: <br>
+(a) Exploring the space of topic coherence measures. Roder et al. <br>
 
 I wonder if there exists a goodness of topic metric that measures both coherence, and specificity (where I use specificty to mean how specific a topic is vs being generic). 
 
