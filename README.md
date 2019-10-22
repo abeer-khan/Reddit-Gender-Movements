@@ -3,8 +3,8 @@ Examine subreddits aligned with social movements related to gender (gendered mov
 
 Examine their posts and comments. 
 1. Preprocess & use NMF on posts <br>
-2. Create subreddit2vec matrices 
-  2.1. subreddit to text vectors (using subreddit content = concatenate all comments in the subreddit)
+2. Create subreddit2vec matrices <br>
+  2.1. subreddit to text vectors (using subreddit content = concatenate all comments in the subreddit) <br>
     2.1.1. subreddit to tf-idf vectors
     2.1.2. subreddit to embedding vectors (using pre-trained Twitter word2vec embeddings)
       2.1.2.1. every subreddit = average of word embeddings of the words in its content
