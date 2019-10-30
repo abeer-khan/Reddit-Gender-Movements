@@ -46,7 +46,7 @@ A partial list of the combinations I tried:
 
 ^ this was text from AskReddit. Since this is a Reddit subreddit, I expect the jargon to be somewhat similar to each of the gnedered subreddits. 
 
-# Main insights
+# What did I learn / Main Insights? 
 Here is an incomplete list of results of this work:
 1. gender movements discuss workplace sexism, personal safety, rape, and legal issues among other gender issues, and different movements often have different perspectives on these issues. 
 2. people involved with the Men's Rights movement are similar to people who are politically right-leaning and associated with sexist or racist content, whereas people involved with the Feminism movement are similar to those who are politically left-leaning, support minorities, body acceptance, and survivors of sexual assault. 
@@ -89,6 +89,29 @@ I wonder if there exists a goodness of topic metric that measures both coherence
 ## One topic model doesn't fit all
 3. Topic modeling is hard. No algorithm fits all datasets. You just have to try the existing ones on yours to see which works in your case. I'd recommend trying NMF before LDA before newer algorithms. 
 
+## World of text (Reddit) -> Subreddit -> posts -> topics -> themes
+4. We bounced around a lot to different levels of text granularity here to get insights. <br>
+
+We started with Reddit which is self-organized by subject into subreddits.  <br>
+We then decided that merely knowing posts in say r/Feminism are related to Feminism is not enough. We'd like more fine grained topics <br>
+
+We aggregated posts into topics. <br>
+
+We then realized that hey, some topics are redundant or too fine-grained. So we went up to a higher level of granularity and organized topics into themes. <br>
+
+Another interesting thing is that there are 2 different ways we could have gone from 6 subreddits -> 6x50 topics -> 17 themes. <br>
+(a) We could look at all 6x50 topics and organize them into themes, and glean the perspectives different subreddits have on each theme, by looking at the constitutent topics of each subreddit under the theme. <br>
+(b) We could look at each subreddit's topics in isolation, organize each subreddit's topics into themes (to have 6 sets of themes), and somehow compare them. <br>
+We chose to do (a). I somehow find this design decision akin to the debate on calculating the average of several datasets. Do Is overall average = average(averages of each dataset) OR Is overall average = average(all the points in all the datasets). 
+
+## Sentiment analysis is NOT necessarily the same as stance detection
+There was a wonderful paper (or textbook???) that succinctly explained the difference. Unfortunately I can't find it. <br>
+To my memory, sentiment analysis measures the positive / negative nature of the *language* of your text. On the other hand, stance detection measures whether the text agrees with a certain position. 
+For e.g. consider "I like carrots so damn much it's insane >.<". The sentiment of the language is probably negative. But the author's stance towards carrots is positive.  
+
+## Hate speech? Abusive language? 
+These are interesting questions to think about in gendered issues. There is no consensus on what constitutes hate speech or abusive language. 
+
 # Further Reading
 This is a list of resources that I found interesting conducting this research. Maybe you will too. 
 1. See my thesis for more information https://uwspace.uwaterloo.ca/handle/10012/14973?show=full . Yes, I know this is actually a summary of my research. 
@@ -96,7 +119,12 @@ This is a list of resources that I found interesting conducting this research. M
   2.1. CluWords CluWords: Exploiting Semantic Word Clustering Representation for Enhanced Topic Modeling <br>
   2.2. Topic Modeling for Short Texts with Auxiliary Word Embeddings. Li et al. <br>
   2.3. Short-text topic modeling via Non-Negative Matrix Factorization Enriched with Local Word-Context Correlations. Shi et al. <br>
-  2.4.
+  2.4. Predicting Response to Poliitcal blog posts with topic models <br>
+  2.5. 
+3. At one point we considered seeing which topics, and which subreddits, possessed more hate speech / abusive language. Preliminary tests indicated the sentiment of texts labeled related to rape were most negative in both M & W dominated subreddits. The texts of M dominated subreddits were more negative in sentiments than W's. These results are not included in my final report. Please read my discussion on hate speech / abusive language / sentiment / stance analysis above. 
+  3.1. Comparative studies of detecting abusive language on Twitter. Lee et al. 
+  3.2. 
+    
 
 ... to be continued. 
 
