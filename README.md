@@ -1,4 +1,4 @@
-# Reddit-Gender-Movements
+# A Data-driven Analysis of Gendered Subreddits (The Red Pill, Men's Rights, Feminism, Ask Men, Ask Women) 
 
 # Why I did it?
 What are the gender issues people discuss today? What do we know about the people who discuss them? Where should we even look to find this information? 
