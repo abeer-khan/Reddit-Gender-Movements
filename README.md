@@ -130,7 +130,11 @@ This is a list of resources that I found interesting conducting this research. M
   2.6. Task-oriented Word Embedding for Text Classification. Liu et al. <br>
   2.7. Bag-of-embeddings for text classification. Jin et al. <br>
   2.8.
-    
+3. Gender <br>
+  3.1. Identifying gender of microblog users based on message mining. Huang et al. <br>
+  3.2. Machine Learning models of text categorization by author gender using topic-independent features. Sboev et al. <br>
+  3.3. KNN with TF-IDF based framework for text categorization. Trstenjak et al. <br>
+  3.4. 
 
 ... to be continued. 
 
