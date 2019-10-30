@@ -109,6 +109,12 @@ There was a wonderful paper (or textbook???) that succinctly explained the diffe
 To my memory, sentiment analysis measures the positive / negative nature of the *language* of your text. On the other hand, stance detection measures whether the text agrees with a certain position. 
 For e.g. consider "I like carrots so damn much it's insane >.<". The sentiment of the language is probably negative. But the author's stance towards carrots is positive.  
 
+At one point we considered seeing which topics, and which subreddits, had more positive or negative sentiment language. Preliminary tests indicated the sentiment of texts labeled related to rape were most negative in both M & W dominated subreddits. The texts of M dominated subreddits were more negative in sentiments than W's. These results are not included in my final report. Please read my discussion on hate speech / abusive language / sentiment / stance analysis above. <br>
+
+Related work: <br>
+(a) Comparative studies of detecting abusive language on Twitter. Lee et al.  <br>
+ 
+  
 ## Hate speech? Abusive language? 
 These are interesting questions to think about in gendered issues. There is no consensus on what constitutes hate speech or abusive language. 
 
@@ -120,10 +126,10 @@ This is a list of resources that I found interesting conducting this research. M
   2.2. Topic Modeling for Short Texts with Auxiliary Word Embeddings. Li et al. <br>
   2.3. Short-text topic modeling via Non-Negative Matrix Factorization Enriched with Local Word-Context Correlations. Shi et al. <br>
   2.4. Predicting Response to Poliitcal blog posts with topic models <br>
-  2.5. 
-3. At one point we considered seeing which topics, and which subreddits, possessed more hate speech / abusive language. Preliminary tests indicated the sentiment of texts labeled related to rape were most negative in both M & W dominated subreddits. The texts of M dominated subreddits were more negative in sentiments than W's. These results are not included in my final report. Please read my discussion on hate speech / abusive language / sentiment / stance analysis above. 
-  3.1. Comparative studies of detecting abusive language on Twitter. Lee et al. 
-  3.2. 
+  2.5. LDAvis: Method for visualizing & interpreting topics. Stevert, Shirley. <br>
+  2.6. Task-oriented Word Embedding for Text Classification. Liu et al. <br>
+  2.7. Bag-of-embeddings for text classification. Jin et al. <br>
+  2.8.
     
 
 ... to be continued. 
