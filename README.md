@@ -65,21 +65,21 @@ I'm not sure why in my reading of research work, LDA seemed to be the algorithm 
 ## Coherence metrics didn't really work for me
 2. Related to point (1). "Coherence" of a topic is a concept many topic modeling algorithms strive to achieve. A good topic modeling algorithm is one that yields coherent topics. They measure coherence via many metrics that attempt to mimic human judgements of coherence. These metrics use word counts, embeddings, stemmed and unstemmped corpora, and everything in between. <br>
 
-Here is how I organized the "coherence" metrics in my head, based on my reading: 
-1. use word co-occurrences
-  1.1. these co-occurrences are calculated on my own corpus (in my case gendered subreddits)
-  1.2. these co-occurrences are calculated on an external corpus. 
-2. use embeddings
-  2.1. trained on my own corpus
-    2.1.1. word2vec (trained on stemmed / unstemmed, stop removed / not removed corpora)
-    2.1.2. fastText (trained on stemmed / unstemmed, stop removed / not removed corpora)
-    ...
-  2.2. trained on external corpora
-    2.2.1. word2vec (trained on stemmed / unstemmed, stop removed / not removed corpora)
-    2.2.2. fastText (trained on stemmed / unstemmed, stop removed / not removed corpora)
-    ...
+Here is how I organized the "coherence" metrics in my head, based on my reading: <br>
+1. use word co-occurrences <br>
+  1.1. these co-occurrences are calculated on my own corpus (in my case gendered subreddits) <br>
+  1.2. these co-occurrences are calculated on an external corpus. <br>
+2. use embeddings <br>
+  2.1. trained on my own corpus <br>
+    2.1.1. word2vec (trained on stemmed / unstemmed, stop removed / not removed corpora) <br>
+    2.1.2. fastText (trained on stemmed / unstemmed, stop removed / not removed corpora) <br>
+    ... <br>
+  2.2. trained on external corpora <br>
+    2.2.1. word2vec (trained on stemmed / unstemmed, stop removed / not removed corpora) <br>
+    2.2.2. fastText (trained on stemmed / unstemmed, stop removed / not removed corpora) <br>
+    ... <br>
     
-Obviously, it's a little unfair if you use coherence metrics that use embeddings trained on stemmed corpora, to evaluate the goodness of topic models on corpora that are not similarly preprocessed. 
+Obviously, it's a little unfair if you use coherence metrics that use embeddings trained on stemmed corpora, to evaluate the goodness of topic models on corpora that are not similarly preprocessed. <br>
  
 Related work: <br>
 (a) Exploring the space of topic coherence measures. Roder et al. <br>
