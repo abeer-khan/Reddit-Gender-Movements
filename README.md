@@ -1,6 +1,6 @@
 # A Data-driven Analysis of Gendered Subreddits (The Red Pill, Men's Rights, Feminism, Ask Men, Ask Women) 
 
-I've submitted a paper summarizing this work. It's under review. In the meantime, skim my thesis https://uwspace.uwaterloo.ca/handle/10012/14973?show=full  ! 
+I've submitted a paper summarizing this work. It's under review. In the meantime, skim the abstract & Chapter 6 of my thesis https://uwspace.uwaterloo.ca/handle/10012/14973?show=full  ! 
 
 # A. Why I did it?
 What are the gender issues people discuss today? What do we know about the people who discuss them? Where should we even look to find this information? 
