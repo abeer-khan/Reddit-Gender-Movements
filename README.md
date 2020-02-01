@@ -32,7 +32,7 @@ For this we
         
 I have the matrix calculated as per 2.2. It's too large to upload. Email me and I'll share a copy. 
   
-# D. Why did I choose NMF as the topic modeling algorithm of choice?
+## FAQ: Why did I choose NMF as the topic modeling algorithm of choice?
 Short Answer: It produced topics that seemed coherent to us. 
 
 Long Answer: 
