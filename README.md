@@ -21,7 +21,7 @@ We then extract the keywords used by each subreddit to discuss each them (leadin
 This part is a mixed-method analysis using both NMF and human involvement. 
 
 We examine their comments to extract some characteristics of the people involved with these gendered subreddits. 
-For this we
+For this we <br>
 2. Create subreddit2vec matrices <br>
   2.1. subreddit to text vectors (where subreddit content = text of the concatenation of all comments in the subreddit) <br>
     2.1.1. subreddit to tf-idf vectors <br>
