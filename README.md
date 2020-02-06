@@ -1,6 +1,8 @@
 # A Data-driven Analysis of Gendered Subreddits (The Red Pill, Men's Rights, Feminism, Ask Men, Ask Women) 
 
-We've been accepted to <a href="http://dbdmg.polito.it/darli-ap2020/">DARLI-AP 2020</a>! The conference proceedings aren't out yet, so here is a copy of the paper: 
+We've been accepted to <a href="http://dbdmg.polito.it/darli-ap2020/">DARLI-AP 2020</a>! The conference proceedings aren't out yet, so <a href="https://github.com/abeer-khan/Reddit-Gender-Movements/blob/master/Reddit_gender%20(1).pdf"> here </a> is a copy of the paper: 
+
+<br>
 
 If you want even more details, skim the abstract & Chapter 6 of my <a href="https://uwspace.uwaterloo.ca/handle/10012/14973?show=full"> thesis</a>! 
 
