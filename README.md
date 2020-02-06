@@ -1,6 +1,7 @@
 # A Data-driven Analysis of Gendered Subreddits (The Red Pill, Men's Rights, Feminism, Ask Men, Ask Women) 
 
-We've been accepted to <a href="http://dbdmg.polito.it/darli-ap2020/">DARLI-AP 2020</a>! The conference proceedings aren't out yet, so <a href="https://github.com/abeer-khan/Reddit-Gender-Movements/blob/master/Reddit_gender%20(1).pdf"> here </a> is a copy of the paper. For fewer details, see this <a href="https://github.com/abeer-khan/Reddit-Gender-Movements/blob/master/CAN-CWIC%20Reddit%20gender%20movements%20poster%202019.pdf"> poster </a> we presented at CAN-CWIC 2019. 
+We've been accepted to <a href="http://dbdmg.polito.it/darli-ap2020/">DARLI-AP 2020</a>! The conference proceedings aren't out yet, so <a href="https://github.com/abeer-khan/Reddit-Gender-Movements/blob/master/Reddit_gender%20(1).pdf"> here </a> is a copy of the paper. For fewer details, see this <a href="https://github.com/abeer-khan/Reddit-Gender-Movements/blob/master/CAN-CWIC%20Reddit%20gender%20movements%20poster%202019.pdf"> poster </a> we presented at CAN-CWIC 2019. For more details, skim my <a href="https://uwspace.uwaterloo.ca/handle/10012/14973?show=full"> thesis</a>. Results are in Chapter 6. 
+
 <!--
 <object data="https://github.com/abeer-khan/Reddit-Gender-Movements/blob/master/CAN-CWIC%20Reddit%20gender%20movements%20poster%202019.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://github.com/abeer-khan/Reddit-Gender-Movements/blob/master/CAN-CWIC%20Reddit%20gender%20movements%20poster%202019.pdf">
@@ -8,7 +9,6 @@ We've been accepted to <a href="http://dbdmg.polito.it/darli-ap2020/">DARLI-AP 2
     </embed>
 </object>
 -->
-For more details, skim my <a href="https://uwspace.uwaterloo.ca/handle/10012/14973?show=full"> thesis</a>. Results are in Chapter 6. 
 
 # A. Why I did it?
 What are the gender issues people discuss today? What do we know about the people who discuss them? Where should we even look to find this information? 
