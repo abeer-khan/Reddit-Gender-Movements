@@ -24,17 +24,22 @@ This part is a mixed-method analysis using both NMF and human involvement.
 
 We examine their comments to extract some characteristics of the people involved with these gendered subreddits. 
 For this we create two kinds of subreddit to vector matrices: <br>
-1. subreddit to text vectors (where subreddit content = text of the concatenation of all comments in the subreddit)
-  <ol>
-  <li> 1. subreddit to tf-idf vectors </li>
-  2. subreddit to embedding vectors (using pre-trained Twitter word2vec embeddings)
-    * every subreddit = average of word embeddings of the words in its content 
-    * every subreddit = weighted average of all word embeddings with weights = its tf-idf
-  </ol>
-2. subreddit to interest vectors.
+<ol>
+  <li> subreddit to text vectors (where subreddit content = text of the concatenation of all comments in the subreddit)
+    <ol>
+    <li> subreddit to tf-idf vectors </li>
+      <li> subreddit to embedding vectors (using pre-trained Twitter word2vec embeddings) </li>
+      <ul> 
+        <li> every subreddit = average of word embeddings of the words in its content </li>
+        <li> every subreddit = weighted average of all word embeddings with weights = its tf-idf </li>
+      </ul>
+    </ol>
+   </li> 
+  <li> subreddit to interest vectors.
   * For each subreddit (all million subreddits), find the number of users it has in common with every other subreddit (actually the top 200-2000 = 2047 subreddits)
   * Find PPMI of each cell.
-        
+</ol>
+
 I have the matrix calculated as per (2). It's too large to upload. Email me and I'll share a copy. 
   
 ## FAQ: Why did I choose NMF as the topic modeling algorithm of choice?
